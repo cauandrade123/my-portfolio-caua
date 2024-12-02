@@ -19,15 +19,21 @@ function App() {
             </div>
         </header>
         <section className="myself">
-            <Typical className='animacao'
-                    steps={[
-                      '<Cauã Andrade Condé/>', 2000,
-                      "Dev-fullstack", 10500,
-                    ]}
-                    loop={2} 
-            /> 
+            <div className="texto-animado">
+                <Typical className='animacao'
+                        steps={[
+                        '<Cauã Andrade Condé/>', 2000,
+                        "Desenvolvedor Full-stack", 10500,
+                        ]}
+                        loop={Infinity} 
+                        
 
-            <img src={cr7} alt="Foto Cauã" />
+        
+                /> 
+            </div>
+            <div className="foto">
+                <img className='foto-caua' src={cr7} alt="Foto Cauã" />
+            </div>
         </section>
         <section className="aboutme">
             <div className="cabecalho-sobremim">
@@ -58,32 +64,37 @@ function App() {
                 <h4>React</h4>
             </div>
             <div className="cards-tecnologias">
-                <img src="" alt="foto javascript" />
+                <img src="" alt="foto html" />
                 <h4>Html</h4>
             </div>
             <div className="cards-tecnologias">
-                <img src="" alt="foto javascript" />
-                <h4>CSSt</h4>
+                <img src="" alt="foto css" />
+                <h4>CSS</h4>
             </div>
             <div className="cards-tecnologias">
-                <img src="" alt="foto javascript" />
+                <img src="" alt="foto sass" />
                 <h4>SCSS</h4>
             </div>
             <div className="cards-tecnologias">
-                <img src="" alt="foto javascript" />
+                <img src="" alt="foto mysql" />
                 <h4>MYSQL</h4>
             </div>
             <div className="cards-tecnologias">
-                <img src="" alt="foto javascript" />
+                <img src="" alt="foto sql server" />
                 <h4>Sql Server</h4>
             </div>
             <div className="cards-tecnologias">
-                <img src="" alt="foto javascript" />
+                <img src="" alt="foto git" />
                 <h4>Git</h4>
             </div>
         </section>
         <section className="meus-projetos">
-
+            <div className="cabecalho-meusprojetos">
+                    <h1>Meus Projetos</h1>
+            </div>
+            <div className="projetos">
+                <h5>Clinica Médica</h5>
+            </div>
         </section>
       </div>     
   </main>
