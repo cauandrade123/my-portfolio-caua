@@ -26,10 +26,18 @@ function App() {
                         "Desenvolvedor Full-stack", 10500,
                         ]}
                         loop={Infinity} 
-                        
-
-        
                 /> 
+
+                <div className="links-midias">
+                    <div className="botao-sobremim">
+                        <button className='butao-sobremim'>Sobremim</button>
+                    </div>
+                    <div className="botoes">
+                      <img className='icones' src="../src/assets/images/linkedin.png" alt="" />
+                      <img className='icones' src="../src/assets/images/github.png" alt="" />
+                      <img className='icones' src="../src/assets/images/resume.png" alt="" />
+                    </div>
+                </div>
             </div>
             <div className="foto">
                 <img className='foto-caua' src={cr7} alt="Foto Cauã" />

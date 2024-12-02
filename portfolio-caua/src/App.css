@@ -1,23 +1,21 @@
-
-
-body{
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,250,252,1) 100%);
+body {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(70, 250, 252, 1) 100%);
 }
 
 
-.div-principal{
+.div-principal {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
 }
 
-header{
+header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,7 +26,7 @@ header{
     background-color: rgba(0, 0, 139, 0.085);
 }
 
-.lista{
+.lista {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -36,13 +34,13 @@ header{
     margin-right: 20px;
 }
 
-.caua{
+.caua {
     display: flex;
-    margin-left: 20px ;
-    
+    margin-left: 20px;
+
 }
 
-section.myself{
+section.myself {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -53,7 +51,7 @@ section.myself{
 
 
 
-.aboutme{
+.aboutme {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -62,22 +60,22 @@ section.myself{
     height: 80dvh;
     background-color: rgba(1, 1, 22, 0.687);
     border-radius: 60px;
-    
+
 }
 
-.cabecalho-sobremim{
+.cabecalho-sobremim {
     display: flex;
     align-items: center;
     margin-left: 30px;
     justify-content: flex-start;
 
-    h1{
+    h1 {
         font-size: 50px;
         margin-top: 10px;
     }
 }
 
-.content-sobremim{
+.content-sobremim {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -89,41 +87,93 @@ section.myself{
     font-weight: lighter;
 }
 
-.icones{
+.icones {
     display: flex;
     flex-direction: row;
     gap: 70px;
 }
 
 
-.texto-animado{
+.texto-animado {
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-   
+    gap: 30px;
+    flex-direction: column;
 
-    .animacao{
+
+    .links-midias {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 28px;
+
+
+        .botao-sobremim {
+
+            display: flex;
+            justify-content: end;
+
+            .butao-sobremim {
+                width: 150px;
+                height: 40px;
+                margin-left: 10px;
+                border-radius: 12px;
+                background-color: rgb(10, 69, 69);
+                border: none;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+
+            .butao-sobremim:hover{
+                background-color: red;
+                color: white;
+                
+            }
+        }
+
+        .botoes {
+
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            img.icones {
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+
+            img.icones:hover{
+               transform: scale(1.3);
+            }
+        }
+
+
+    }
+
+    .animacao {
         color: white;
         font-size: 50px;
         text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.696);
-        white-space: nowrap;  
+        white-space: nowrap;
         max-width: 60px;
-        position: absolute ;
+
     }
 }
 
-.foto{
+.foto {
     display: flex;
     align-self: center;
     justify-content: center;
     align-items: center;
-    
 
-    .foto-caua{
-        width: 300px; 
+
+    .foto-caua {
+        width: 300px;
         border: 15px solid rgb(0, 128, 111);
         border-radius: 50%;
-    
+
     }
 }
