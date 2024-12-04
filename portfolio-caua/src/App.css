@@ -46,7 +46,8 @@ header {
     justify-content: space-between;
     color: white;
     width: 100%;
-    height: 100px;
+    height: 80px;
+    position: fixed;
     background-color: rgba(0, 0, 139, 0.085);
 }
 
@@ -86,7 +87,7 @@ section.myself {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 85dvh;
+    height: 100dvh;
     gap: 100dvh;
 }
 
@@ -98,7 +99,7 @@ section.myself {
     gap: 30px;
     color: white;
     width: 100%;
-    height: 80dvh;
+    height: 100dvh;
     background-color: rgba(1, 1, 22, 0.687);
 
 }
@@ -106,8 +107,7 @@ section.myself {
 .cabecalho-sobremim {
     display: flex;
     align-items: center;
-   
-    padding: 10px;
+    padding: 20px;
     justify-content: flex-start;
 
     h1 {
@@ -118,11 +118,10 @@ section.myself {
 
 .content-sobremim {
     display: flex;
-    border: 1px solid green;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
     font-size: 22px;
     font-weight: lighter;
 
@@ -165,8 +164,8 @@ section.myself {
             justify-content: end;
 
             .butao-sobremim {
-                width: 150px;
-                height: 40px;
+                width: 200px;
+                height: 50px;
                 margin-left: 10px;
                 border-radius: 12px;
                 background-color: rgb(10, 69, 69);
@@ -208,7 +207,7 @@ section.myself {
         font-size: 50px;
         text-shadow: 10px 10px 10px rgba(0, 234, 255, 0.696);
         white-space: nowrap;
-        max-width: 60px;
+        max-width: 90px;
 
     }
 }
@@ -221,9 +220,9 @@ section.myself {
 
 
     .foto-caua {
-        width: 300px;
+        width: 400px;
         border: 15px solid rgb(0, 128, 111);
-        border-radius: 50%;
+        border-radius: 20%;
 
     }
 }
@@ -234,7 +233,7 @@ section.myself {
     justify-content: space-evenly;
     padding: 20px;
     width: 100%;
-    height: 97dvh;
+    height: 100dvh;
     border: 1px solid green;
     background-color: rgb(229, 130, 130);
 
@@ -246,6 +245,8 @@ section.myself {
     .cartoes{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 37px;
         padding-top: 20px;
         margin-bottom: 30px;
@@ -291,4 +292,120 @@ section.myself {
 section.meus-projetos{
     width: 100%;
     height: 80dvh;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .lista {
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 0;
+    }
+
+    section.myself {
+        flex-direction: column-reverse;
+        gap: 1px;
+        height: 140dvh;   /* testar com outras medidas */
+
+        .texto-animado{
+
+            display: flex;
+            justify-content: center;
+            width: 330px;  /* sujeito á mudanças */
+           
+
+            .animacao{
+                margin-right: 30px;
+                font-size: 30px;
+            }
+
+        }
+
+    }
+    
+  
+    .content-sobremim {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .icon-web-dev img.icon-webdev {
+        width: 150px;
+        height: 150px;
+    }
+
+    .texto-animado {
+        flex-direction: column;
+    }
+
+    .botoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    section.myself{
+        display: flex;
+        height: 100dvh;   /* sujeito á mudanças */
+        justify-content: space-evenly;
+    }
+
+    .content-sobremim {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .foto-caua {
+        width: 300px;
+        margin-top: 90px;
+    }
+
+
+    .stacks{
+        height: 120dvh;
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        
+
+    }
+
+    .cartoes {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cards-tecnologias {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cards-tecnologias .image-icon-techs {
+        width: 40px;
+        height: 40px;
+    }
+
+    .animacao {
+        text-shadow: 5px 5px 5px rgba(0, 234, 255, 0.5);
+    }
 }

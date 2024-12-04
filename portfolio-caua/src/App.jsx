@@ -59,31 +59,31 @@ function App() {
              <h1>Tecnologias dominadas</h1>
                         <div className="cartoes">
                             <div className="cards-tecnologias">
-                                <img className='image-icon-techs' src="" alt="foto javascript" />
+                                <img className='image-icon-techs' src="../src/assets/images/icons8-javascript-48.png" alt="foto javascript" />
                                 <h4>Javascript</h4>
                             </div>
                             <div className="cards-tecnologias">
-                                <img className='image-icon-techs' src="" alt="foto Node" />
+                                <img className='image-icon-techs' src="../src/assets/images/icons8-nó-js-48.png" alt="foto Node" />
                                 <h4>Node</h4>
                             </div>
                             <div className="cards-tecnologias">
-                                <img className='image-icon-techs' src="" alt="foto javascript" />
+                                <img className='image-icon-techs' src="../src/assets/images/icons8-nativo-de-reagir-48.png" alt="foto javascript" />
                                 <h4>React</h4>
                             </div>
                             <div className="cards-tecnologias">
-                                <img className='image-icon-techs' src="" alt="foto html" />
+                                <img className='image-icon-techs' src="../src/assets/images/icons8-html-48.png" alt="foto html" />
                                 <h4>Html</h4>
                             </div>
                             <div className="cards-tecnologias">
-                                <img className='image-icon-techs' src="" alt="foto css" />
+                                <img className='image-icon-techs' src="../src/assets/images/icons8-css-48.png" alt="foto css" />
                                 <h4>CSS</h4>
                             </div>
                             <div className="cards-tecnologias">
-                                <img className='image-icon-techs' src="" alt="foto sass" />
+                                <img className='image-icon-techs' src="../src/assets/images/icons8-atrevimento-48.png" alt="foto sass" />
                                 <h4>SCSS</h4>
                             </div>
                             <div className="cards-tecnologias">
-                                <img className='image-icon-techs' src="" alt="foto mysql" />
+                                <img className='image-icon-techs' src="../src/assets/images/icons8-mysql-48.png" alt="foto mysql" />
                                 <h4>MYSQL</h4>
                             </div>
                             <div className="cards-tecnologias">
